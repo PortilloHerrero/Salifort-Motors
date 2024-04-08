@@ -14,3 +14,5 @@ on the data.
 This model helps predict whether an employee will leave and identify which factors
 are most influential. These insights can help HR make decisions to improve
 employee retention.
+
+Data available in: https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction
