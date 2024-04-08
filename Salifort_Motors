@@ -11,34 +11,4 @@ This model helps predict whether an employee will leave and identify which facto
 are most influential. These insights can help HR make decisions to improve
 employee retention.
 
-# Import packages
-# data manipulation packages
-import numpy as np
-import pandas as pd
-# data visualization packages
-from matplotlib import pyplot as plt
-import seaborn as sns
-# For metrics and helpful functions
-from sklearn.model_selection import GridSearchCV, train_test_split
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, ConfusionMatrixDisplay, classification_report
-from sklearn.metrics import roc_auc_score, roc_curve
-# For data modeling
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
-# Load dataset into a dataframe
-hr_df = pd.read_csv("HR_capstone_dataset.csv")
-# For displaying all of the columns in dataframes
-pd.set_option('display.max_columns', None)
-# Display first few rows of the dataframe
-hr_df.head()
-# Gather basic information about the data
-hr_df.info()
-# Gather descriptive statistics about the data
-hr_df.describe(include='all')
 
-With the descriptive statistics from the data set we can see first data insights. At first we can see
-some data points that attract our attention as average monthly hours with very high values.
-We can also see from the first two steps that some columns have some typos and do not follow a
-standarize style. It is really important to standarize the writing of the columns as it allows a better
-readibility and consistency.
-We will correct the typos and standarize the names:
